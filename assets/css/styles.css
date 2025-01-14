@@ -35,7 +35,7 @@ header {
     color: white; /* Ajusta según el diseño general */
     text-align: left; /* Alinea el texto a la izquierda */
     line-height: 1.2    ; /* Espaciado entre las líneas para mejor legibilidad */
-    font-size: 22px; /* Tamaño de fuente ajustado para subtítulos */
+    font-size: 12px; /* Tamaño de fuente ajustado para subtítulos */
     font-weight: normal; /* Grosor estándar para el texto descriptivo */
     margin-left: 10px; /* Espaciado entre el logo y el texto */
     display: inline-block; /* Asegura que se alinee horizontalmente con el logo */
