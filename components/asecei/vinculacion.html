@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinculación - ASECEI</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                fetch("../../components/header.html")
+                    .then(response => response.text())
+                    .then(data => {
+                        document.querySelector("header").innerHTML = data;
+                    });
+            });
+        </script>
+    </header>
+
+    <!-- Sección de Vinculación -->
+    <section class="vinculacion-section">
+        <div class="vinculacion-header">
+            <img src="/assets/images/asecei/header.png" alt="Imagen Vinculación">
+            <h1>VINCULACIÓN</h1>
+        </div>
+        <div class="vinculacion-content">
+            <p>
+                El Art. 7 del Estatuto vigente de la ASECEI de los fines específicos, expresa en su literal b):
+                “Motivar la generación y el intercambio de conocimientos en el proceso de aprendizaje de ingeniería
+                y fomentar la interrelación y cooperación entre las Instituciones de Educación Superior a nivel nacional e internacional”.
+            </p>
+            <p>
+                Debemos añadir que, para desarrollar las herramientas para la innovación, el desarrollo y la producción en el país,
+                debe existir el intercambio de ideas entre la Academia, la Empresa y el Estado. Esta alianza estratégica universidad-empresa-estado,
+                llevará a un desarrollo científico, tecnológico e innovación para crear algo nuevo para el país, la región, organizaciones sociales,
+                individuos, etc.
+            </p>
+            <p>
+                ASECEI está vinculada a la Asociación Iberoamericana de instituciones de Enseñanza de la Ingeniería- ASIBEI, que tiene por objetivos:
+                “impulsar la cooperación y el intercambio entre Instituciones de Educación Superior de la enseñanza de la ingeniería en todos los países
+                iberoamericanos, contando con España y Portugal; promover en las Instituciones la excelencia docente, la investigación y la vinculación
+                con el sector productivo y fortalecer el desarrollo de los programas de ingeniería” (Estatuto de ASIBEI, capítulo III).
+            </p>
+            <p>
+                ASIBEI, además, está asociada a otras Corporaciones mundiales, como: ASEE (American Society for Engineering education);
+                IFEES (International Federation of Engineering Education Societies); SEFI (Société Européenne pour la formation des Ingenieurs);
+                WEEF (World Engineering Education Forum).
+            </p>
+        </div>
+    </section>
+</body>
+</html>

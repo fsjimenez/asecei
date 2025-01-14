@@ -1,0 +1,135 @@
+<section class="hero">
+  <div class="hero-overlay">
+    <h1>ASECEI</h1>
+    <p>Asociación Ecuatoriana de Instituciones de Enseñanza de Ingeniería</p>
+  </div>
+</section>
+
+<section class="about">
+  <div class="about-container">
+    <img src="/assets/images/about.png" alt="Sobre la ASECEI" />
+    <div class="about-text">
+      <h2>SOBRE LA ASECEI</h2>
+      <p>
+        Somos una asociación que busca coadyuvar al permanente mejoramiento de
+        la educación en ingeniería, en investigación, en extensión y en
+        innovación tecnológica.
+      </p>
+      <a href="/sobre-asecei.html" class="button">CONTINUAR LEYENDO</a>
+    </div>
+  </div>
+</section>
+
+<section class="members">
+  <h2>MIEMBROS</h2>
+  <div class="carousel">
+    <button class="carousel-control prev">&#8249;</button>
+    <div class="carousel-container">
+      <div class="carousel-item">
+        <img
+          src="/assets/images/equinoccial.png"
+          alt="Universidad Tecnológica Equinoccial"
+        />
+        <div class="carousel-overlay">
+          <p>Universidad Tecnológica Equinoccial</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img
+          src="/assets/images/ambato.png"
+          alt="Universidad Técnica de Ambato"
+        />
+        <div class="carousel-overlay">
+          <p>Universidad Técnica de Ambato</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img
+          src="/assets/images/salesiana.png"
+          alt="Universidad Técnica Salesiana"
+        />
+        <div class="carousel-overlay">
+          <p>Universidad Técnica Salesiana</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/assets/images/azuay.png" alt="Universidad de Cuenca" />
+        <div class="carousel-overlay">
+          <p>Universidad de Cuenca</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control next">&#8250;</button>
+  </div>
+  <a href="/members.html" class="button">VER TODOS LOS MIEMBROS</a>
+</section>
+
+<section class="links-section">
+  <h2>Vínculos de Interés</h2>
+  <div class="links-container">
+      <div class="link-item">
+          <img src="/assets/images/asee.png" alt="ASEE Logo">
+          
+      </div>
+      <div class="link-item">
+          <img src="/assets/images/igip.jpg" alt="IGIP Logo">
+          
+      </div>
+      <div class="link-item">
+          <img src="/assets/images/sefi.png" alt="SEFI Logo">
+      </div>
+      <div class="link-item">
+          <img src="/assets/images/ifees.png" alt="IFEES Logo">
+      </div>
+  </div>
+</section>
+
+<section class="membership-section">
+  <div class="membership-header">
+      <h2>MIEMBRO DE:</h2>
+  </div>
+  <div class="membership-content">
+      <img src="/assets/images/asibei.png" alt="Asibet Logo">
+  </div>
+</section>
+
+<section class="contact-section">
+  <div class="contact-background">
+      <div class="contact-overlay">
+          <h2>Reciba más información</h2>
+          <form class="contact-form">
+              <input type="email" placeholder="e-mail" required>
+              <button type="submit">Contactar</button>
+          </form>
+      </div>
+  </div>
+</section>
+
+
+<script>
+  const prev = document.querySelector(".carousel-control.prev");
+  const next = document.querySelector(".carousel-control.next");
+  const carouselContainer = document.querySelector(".carousel-container");
+
+  let scrollPosition = 0;
+  const itemWidth = 270; // ancho de cada item incluyendo gap
+
+  prev.addEventListener("click", () => {
+    scrollPosition += itemWidth;
+    if (scrollPosition > 0)
+      scrollPosition = -(
+        carouselContainer.scrollWidth - carouselContainer.clientWidth
+      );
+    carouselContainer.style.transform = `translateX(${scrollPosition}px)`;
+  });
+
+  next.addEventListener("click", () => {
+    scrollPosition -= itemWidth;
+    if (
+      Math.abs(scrollPosition) >
+      carouselContainer.scrollWidth - carouselContainer.clientWidth
+    )
+      scrollPosition = 0;
+    carouselContainer.style.transform = `translateX(${scrollPosition}px)`;
+  });
+</script>

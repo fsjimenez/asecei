@@ -1,0 +1,736 @@
+/* styles.css */
+
+@font-face {
+    font-family: 'Saira Condensed';
+    src: url('../fonts/Saira_Condensed-Thin.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+    @font-face {
+        font-family: 'Saira Bold';
+        src: url('../fonts/Saira_Condensed-Bold.ttf') format('truetype');
+        font-weight: bold;
+        font-style: normal;
+    }
+
+
+body {
+    margin: 0;
+}
+
+/* Centrar elementos dentro del header */
+/* Estilo general para el header */
+header {
+    background-color: #8F3B3B;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Espaciado entre logo y menú */ /* Aumenta el padding lateral */
+    font-family: 'Saira Condensed', Arial, sans-serif;
+    font-weight: 500;
+    padding: 10px 100px;
+}
+/* Estilo para el texto al lado del logo */
+.logo-text {
+    color: white; /* Ajusta según el diseño general */
+    text-align: left; /* Alinea el texto a la izquierda */
+    line-height: 1.2    ; /* Espaciado entre las líneas para mejor legibilidad */
+    font-size: 22px; /* Tamaño de fuente ajustado para subtítulos */
+    font-weight: normal; /* Grosor estándar para el texto descriptivo */
+    margin-left: 10px; /* Espaciado entre el logo y el texto */
+    display: inline-block; /* Asegura que se alinee horizontalmente con el logo */
+    vertical-align: middle; /* Centra verticalmente el texto con respecto al logo */
+}
+
+.logo-text strong {
+    font-size: 18px; /* Tamaño más grande para el título "ASECEI" */
+    font-weight: bold; /* Negrita para resaltar "ASECEI" */
+    color: white; /* Asegura que el color sea consistente con el diseño */
+}
+
+
+
+/* Ajustar posición de la logo */
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 200px;
+}
+
+/* Ajustar el tamaño del logo */
+/* Aplicar sombra al logo */
+/* Aplicar una sombra solo al contenido visible del logo */
+.logo img {
+    max-width: 50px; /* Controla el tamaño del logo */
+    height: auto; /* Mantiene la proporción del logo */
+    margin-right: 20px; /* Espaciado entre el logo y el texto/menú */
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3)); /* Sombra suave aplicada al contenido visible */
+}
+
+
+/* Ajustar estilo del nav */
+/* Alinear correctamente los enlaces del menú */
+nav {
+    display: flex;
+    gap: 100px;
+    align-items: center; /* Asegura que los textos estén centrados verticalmente */
+    font-weight: bold;
+}
+
+/* Ajuste para los enlaces del nav */
+nav a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Saira Condensed', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 10px 0;
+    line-height: 1; /* Asegura que la altura de línea no sea demasiado alta */
+}
+
+/* Estilo para dropdowns */
+/* Estilo del contenedor del dropdown */
+.dropdown {
+    position: relative;
+}
+
+/* Menú desplegable */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    text-align: left;
+    padding: 10px 0; /* Aumenta el área clicable del menú */
+}
+
+/* Mostrar el menú al hacer hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Ajustar área activa para evitar que el menú desaparezca */
+/* Estilo para los enlaces dentro del menú desplegable */
+.dropdown-content a {
+    color: black; /* Cambiar el color de las letras a negro */
+    padding: 8px 16px; /* Mantiene el área clicable */
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+}
+
+/* Fondo al pasar el cursor */
+.dropdown-content a:hover {
+    background-color: #f1f1f1; /* Cambia el fondo al hacer hover */
+    color: black; /* Asegura que el texto siga siendo negro al hacer hover */
+}
+
+
+/* Evitar que desaparezca el menú si el cursor se mueve hacia abajo */
+.dropdown:hover .dropdown-content {
+    display: block; /* Asegura que el menú esté visible al mover el cursor hacia abajo */
+}
+
+
+/* Estilo para la sección hero */
+.hero {
+    position: relative;
+    background: url('/assets/images/background.png') no-repeat center center/cover;
+    height: 600px; /* Aumentar el tamaño de la sección */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', Arial, sans-serif; /* Nueva fuente */
+}
+
+.hero-overlay {
+    text-align: center;
+    color: black;
+    padding: 20px;
+    font-family: 'Saira Bold', Arial, sans-serif;
+}
+
+.hero-overlay h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0 0 10px;
+    font-family: 'Saira Bold', Arial, sans-serif;
+}
+
+.hero-overlay p {
+    font-size: 20px;
+    margin: 0;
+    font-family: 'Saira Bold', Arial, sans-serif;
+}
+
+
+
+/* Estilo para la sección about --------------------------------------------------------------------------- */
+
+.about {
+    background-color: #F1EBE6;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.about-container {
+    display: flex;
+    max-width: 1200px;
+    gap: 80px;
+    align-items: center; /* Asegura que imagen y texto estén alineados verticalmente */
+}
+
+.about-container img {
+    width: 50%; /* Mantiene la proporción para que no ocupe más del 50% del contenedor */
+    border-radius: 8px;
+    object-fit: cover; /* Evita deformaciones en la imagen */
+    height: auto; /* Ajusta la altura automáticamente */
+}
+
+.about-text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Saira Bold', Arial, sans-serif;
+    color: #8C2626;
+}
+
+.about-text h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #8C2626;
+}
+
+.about-text p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #8C2626;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #a03030;
+}
+
+
+
+/* Estilo para la sección members */
+.members {
+    background-color: #F1EBE6;
+    padding: 50px 20px;
+    text-align: center;
+    font-family: 'Saira Bold', Arial, sans-serif;
+    color: #8C2626;
+}
+
+.members h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #8C2626;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto 30px;
+    overflow: hidden;
+}
+
+.carousel-container {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    position: relative;
+    min-width: 250px;
+    height: 350px;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Efecto de agrandamiento y sombra */
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-item:hover {
+    transform: scale(1.05); /* Agranda el rectángulo al pasar el cursor */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Añade sombra suave */
+    cursor: pointer;
+}
+
+.carousel-item a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+}
+
+.carousel-control {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #8C2626;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.carousel-control:hover {
+    color: #a03030;
+}
+
+.button {
+    display: inline-block;
+    background-color: #8C2626;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #a03030;
+}
+
+
+
+/* Sección de Vínculos de Interés ----------------------------------------------------------------------------------------------*/
+/* Sección de Vínculos de Interés */
+.links-section {
+    background-color: #2E2E2E;
+    padding: 50px 20px;
+    text-align: center;
+    color: white;
+}
+
+.links-section h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    font-family: 'Saira Bold', Arial, sans-serif;
+}
+
+.links-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.link-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.link-item img {
+    width: 90%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.link-item:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.link-item p {
+    margin-top: 15px;
+    font-size: 16px;
+    color: white;
+    font-family: 'Saira Bold', Arial, sans-serif;
+    text-align: center;
+}
+
+
+
+/* Estilo para la sección de membresía -----------------------------------------------------------------------------------------*/
+
+.membership-section {
+    text-align: center;
+}
+
+.membership-header {
+    background-color: #2E2E2E;
+    padding: 30px 0;
+}
+
+.membership-header h2 {
+    font-size: 24px;
+    font-family: 'Saira Bold', Arial, sans-serif;
+    text-transform: uppercase;
+    color: white;
+    margin: 0;
+}
+
+.membership-content {
+    background-color: #fff;
+    padding: 5px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+}
+
+.membership-content img {
+    max-width: 300px;
+    height: auto;
+}
+
+/* Sección de Contacto -------------------------------------------------------------------------------*/
+
+.contact-section {
+    position: relative;
+    background: url('/assets/images/launch.png') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+}   
+
+.contact-overlay {
+    text-align: right;
+    color: white;
+    padding: 20px;
+    font-family: 'Saira Bold', Arial, sans-serif;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+
+.contact-overlay h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    display: flex;
+    gap: 10px;
+}
+
+.contact-form input {
+    width: 250px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+.contact-form button {
+    background-color: #8C2626;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: 'Saira Bold', Arial, sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+
+.contact-form button:hover {
+    background-color: #a03030;
+}
+
+
+/* Vinculacion ------------------------------------------------------------------------------------------------------------------- */
+
+.vinculacion-header {
+    position: relative;
+    text-align: center;
+    color: white;
+    overflow: hidden; /* Asegura que el contenido adicional no se desborde */
+}
+
+.vinculacion-header img {
+    width: 100%; /* Se ajusta al ancho de la página */
+    height: 400px; /* Limita la altura de la imagen */
+    object-fit: cover; /* Asegura que la imagen mantenga su proporción sin distorsión */
+    filter: brightness(80%); /* Oscurece la imagen para resaltar el texto */
+}
+
+.vinculacion-header h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+    font-family: 'Saira Bold', Arial, sans-serif;
+    color: white;
+    text-shadow: inset 0 0 50px rgba(0, 0, 0, 0.8);
+}
+
+
+.vinculacion-content {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 15px;
+    font-family: 'Saira Condensed', Arial, sans-serif;
+    font-size: 25px;
+    line-height: 1.5;
+    color: black;
+}
+
+/* HISTORIA -----------------------------------------------------------------------------------------------*/
+
+/* Sección de Historia */
+.historia-section {
+    display: flex;
+    position: relative;
+    height: 100vh; /* Ocupa toda la pantalla */
+    background-color: #f1ebe6;
+    overflow: hidden;
+}
+
+/* Fondo de la imagen en la mitad izquierda */
+.historia-background {
+    width: 50%; /* Ocupa la mitad izquierda */
+    height: 100%; /* Toda la altura de la pantalla */
+    background: url('../../assets/images/asecei/historia.png') no-repeat center center;
+    background-size: cover; /* Ajusta la imagen */
+}
+
+/* Contenido superpuesto */
+.historia-content {
+    position: absolute;
+    top: 0;
+    left: 50%; /* Comienza desde la mitad */
+    width: 50%; /* Ocupa la mitad derecha */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente */
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1); /* Sombra al rectángulo */
+    font-family: 'Saira Condensed', Arial, sans-serif;
+}
+
+/* Caja de texto */
+.historia-text-box {
+    max-width: 500px; /* Limita el ancho del texto */
+    text-align: left;
+    font-family: Arial, sans-serif;
+}
+
+.historia-text-box h2 {
+    font-size: 28px;
+    color: #8c2626; /* Color principal */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.historia-text-box p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+
+/* VALORES */
+/* VALORES */
+/* VALORES SECTION */
+.valores-section {
+    position: relative;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('../../assets/images/asecei/valores.jpeg') no-repeat center center;
+    background-size: cover;
+}
+
+.valores-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Hace que la imagen sea más opaca */
+    z-index: 1;
+}
+
+.valores-content {
+    position: relative;
+    z-index: 2; /* Para que el texto esté encima de la capa opaca */
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 800px;
+    color: white;
+}
+
+.valores-content h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: 'Saira Bold', Arial, sans-serif;
+}
+
+.valores-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+
+/* HISTORIA ---------------------------------------------------------------------------------------------------------------------------------- */
+.historia-section {
+    background-color: #f1ebe6;
+    padding: 50px 20px;
+}
+
+.historia-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.historia-container h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #8c2626;
+    margin-bottom: 20px;
+    font-family: 'Saira Bold', Arial, sans-serif;
+}
+
+.historia-container p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/*MIEMBROS ----------------------------------------------------------------------------------------------------------------------------------*/
+/* MIEMBROS SECTION */
+.miembros-section {
+    padding: 50px 20px;
+    background-color: #f1ebe6;
+    text-align: center;
+}
+
+.miembros-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Incrementa el tamaño mínimo */
+    gap: 30px; /* Aumenta el espacio entre elementos */
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.miembro {
+    text-align: center;
+    background-size: contain;
+}
+
+.miembro img {
+    width: 150px; /* Incrementa el tamaño de la imagen */
+    height: 150px;
+    border-radius: 50%; /* Hace que la imagen sea circular */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+     background-size: contain;
+}
+
+.miembro img:hover {
+    transform: scale(1.1); /* Efecto de agrandamiento */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Añade sombra al hover */
+}
+
+.miembro p {
+    margin-top: 10px;
+    font-size: 16px; /* Aumenta el tamaño del texto */
+    color: #333;
+}
+
+/* MIEMBROS HEADER */
+.miembros-header {
+    position: relative;
+    height: 300px;
+    background: url('/assets/images/miembros/background.jpeg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.miembros-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Capa oscura para resaltar el texto */
+}
+
+.miembros-header-content {
+    position: relative;
+    z-index: 2; /* Coloca el texto sobre la capa oscura */
+    text-align: center;
+    color: white;
+    font-family: 'Saira Bold', Arial, sans-serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.miembros-header-content h1 {
+    font-size: 48px;
+    margin: 0;
+}
+

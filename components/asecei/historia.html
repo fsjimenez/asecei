@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia - ASECEI</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            fetch("../../components/header.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.querySelector("header").innerHTML = data;
+                });
+        });
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header></header>
+
+    <!-- Sección Historia -->
+    <section class="historia-section">
+        <div class="historia-background"></div>
+        <div class="historia-content">
+            <div class="historia-text-box">
+                <h2>VISIÓN</h2>
+                <p>
+                    Ser reconocida como la corporación multidisciplinar más importante para docentes y estudiantes, 
+                    agentes sociales, empresas, organizaciones públicas y privadas, comprometida con el avance de la tecnología e ingeniería, 
+                    orientando su accionar al mejoramiento de la calidad de vida.
+                </p>
+                <h2>MISIÓN</h2>
+                <p>
+                    Coadyuvar al permanente mejoramiento de la educación en ingeniería, en investigación, en extensión y en innovación tecnológica. 
+                    Impulsar la comunicación local, nacional e internacional, la colaboración con las instituciones del Estado y facilitar la cooperación 
+                    empresa-universidad generando el crecimiento socioeconómico del Ecuador.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="valores-section">
+        <div class="valores-background">
+            <div class="valores-content">
+                <h2>VALORES</h2>
+                <p>
+                    La ASECEI se orienta por los valores de respeto a la dignidad y libertad de las personas, 
+                    a la calidad de servicio a la comunidad, trabajo en equipo, al uso eficiente de los recursos, 
+                    a la solidaridad y a la corresponsabilidad en el desarrollo sostenible y sustentable.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="historia-section">
+        <div class="historia-container">
+            <h2>HISTORIA</h2>
+            <p>
+                A raíz de la participación de un grupo de profesores de la Facultad de Ingeniería de la Pontificia Universidad Católica del Ecuador (PUCE) 
+                en el XXI Congreso Chileno de Educación en Ingeniería, realizado en 2007, y gracias a la Invitación del Ing. Julio César Cañón 
+                a construir una asociación de Carreras de Ingeniería que permita la integración de Ecuador a la Asociación Iberoamericana de Instituciones 
+                de Enseñanza de la Ingeniería (ASIBEI).
+            </p>
+            <p>
+                Los docentes ecuatorianos participantes, liderados por el Ing. Ignacio Ruiz Bravo, se comprometieron con la creación de una asociación que fomente la calidad de la Educación Superior en el Ecuador para el avance de la ingeniería en el país y el mundo. 
+                Luego de dos años de trabajo se cristaliza la formación de la Asociación Ecuatoriana de Instituciones de Enseñanza de Ingeniería (AEECEI), 
+                el día 13 de febrero de 2009, en una reunión realizada en la Facultad de Ingeniería de la PUCE con la presencia de Vicerrectores, Decanos y profesores de cinco universidades de la ciudad de Quito. 
+                Las siglas de la Asociación luego se cambiaron por ASECEI (Asociación Ecuatoriana de Instituciones de Enseñanza de Ingeniería) en la Asamblea del 24 de marzo de 2010, realizada en la Universidad Politécnica Salesiana de la Universidad de Cuenca, donde participaron como miembros quince universidades del país.
+            </p>
+            <p>
+                En julio de 2011 se obtiene la personalidad jurídica de la Asociación. Finalmente, el último comité directivo de ASECEI fue presidido por la Escuela Politécnica Nacional a través de sus Rectores Ing. Jaime Calderón Segovia (febrero 2018 a diciembre 2018) y la Dra. Fiorellla Muñoz Bisesti (diciembre 2018 a noviembre 2020).
+            </p>
+        </div>
+    </section>
+    
+</body>
+</html>
