@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estatutos y Reglamentos - ASECEI</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+    <!-- Llamada al Header -->
+    <div id="header-container"></div>
+    <script>
+        // Carga dinámica del header
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header-container').innerHTML = data);
+    </script>
+
+    <!-- Sección de Estatutos y Reglamentos -->
+    <section class="estatutos-section">
+        <div class="estatutos-header">
+            <h1>ESTATUTOS Y REGLAMENTOS</h1>
+        </div>
+        <div class="pdf-viewer">
+            <iframe src="/docs/estatutos-reglamentos.pdf" width="100%" height="800px"></iframe>
+        </div>
+    </section>
+</body>
+</html>
