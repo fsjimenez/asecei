@@ -793,3 +793,38 @@ nav a {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
 }
+
+
+/* DIRECTIVA SECTION */
+.directiva-section {
+    padding: 50px 20px;
+    background-color: #f1ebe6;
+    text-align: center;
+}
+
+.directiva-header h1 {
+    font-size: 36px;
+    font-family: 'Saira Bold', Arial, sans-serif;
+    color: #8C2626;
+    margin-bottom: 20px;
+}
+
+.directiva-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.directiva-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.directiva-list li {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
