@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejes Estratégicos - ASECEI</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+    <!-- Llamada al Header -->
+    <div id="header-container"></div>
+    <script>
+        // Carga dinámica del header
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header-container').innerHTML = data);
+    </script>
+
+    <!-- Sección de Ejes Estratégicos -->
+    <section class="ejes-section">
+        <div class="ejes-header">
+            <h1>EJES ESTRATÉGICOS</h1>
+        </div>
+        <div class="ejes-content">
+            <p>
+                El viernes 22 de Enero de 2016 en sesión del Consejo Directivo de la Asociación Ecuatoriana de Instituciones 
+                de Enseñanza de Ingeniería (ASECEI), llevada a cabo en la Universidad Central del Ecuador, las universidades 
+                miembros de la ASECEI formaron comisiones de trabajo para impulsar un proceso académico regional con el plan 
+                estratégico de ASIBEI (Asociación Iberoamericana de Enseñanza de la Ingeniería) 2013–2020.
+            </p>
+            <p>
+                Para que las carreras de Ingeniería puedan potenciar la investigación científica, tecnológica e innovación para 
+                el incremento de la productividad y competitividad del país, deberán trabajar en los ejes respectivos, con sus 
+                responsables, mismos que se definen a continuación:
+            </p>
+        </div>
+        <div class="ejes-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Mesa</th>
+                        <th>Descripción</th>
+                        <th>Coordinador/Subcoordinador</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Eje1</td>
+                        <td>Movilidad Estudiantil y docente</td>
+                        <td>Universidad Técnica de Ambato (UTA)</td>
+                    </tr>
+                    <tr>
+                        <td>Eje2</td>
+                        <td>Formación del Ingeniero Ecuatoriano</td>
+                        <td>Universidad Central del Ecuador (UCE)</td>
+                    </tr>
+                    <tr>
+                        <td>Eje3</td>
+                        <td>Visibilidad y consolidación de ASECEI a nivel nacional</td>
+                        <td>Pontificia Universidad Católica del Ecuador (PUCE)</td>
+                    </tr>
+                    <tr>
+                        <td>Eje4</td>
+                        <td>Calidad de la Educación en Ingeniería</td>
+                        <td>Universidad de las Fuerzas Armadas ESPE</td>
+                    </tr>
+                    <tr>
+                        <td>Eje5</td>
+                        <td>Formación de profesores y posgrados para Ingeniería</td>
+                        <td>Escuela Superior Politécnica del Litoral (ESPOL)</td>
+                    </tr>
+                    <tr>
+                        <td>Eje6</td>
+                        <td>Innovación y desarrollo tecnológico</td>
+                        <td>Universidad de las Fuerzas Armadas ESPE</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</body>
+</html>

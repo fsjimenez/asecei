@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentos y Certificados - ASECEI</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+    <!-- Llamada al Header -->
+    <div id="header-container"></div>
+    <script>
+        // Carga dinámica del header
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header-container').innerHTML = data);
+    </script>
+
+    <!-- Sección Documentos y Certificados -->
+    <section class="documentos-section">
+        <div class="documentos-header">
+            <h1>DOCUMENTOS Y CERTIFICADOS</h1>
+        </div>
+        <div class="documentos-grid">
+            <!-- Card con Vista Previa -->
+            <div class="documentos-card">
+                <h2>Documento 1</h2>
+                <iframe src="/assets/documents/documento1.pdf" class="pdf-preview" title="Vista previa de Documento 1"></iframe>
+                <a href="/assets/documents/documento1.pdf" class="btn-download" download>Descargar</a>
+            </div>
+            <div class="documentos-card">
+                <h2>Documento 2</h2>
+                <iframe src="/assets/documents/documento2.pdf" class="pdf-preview" title="Vista previa de Documento 2"></iframe>
+                <a href="/assets/documents/documento2.pdf" class="btn-download" download>Descargar</a>
+            </div>
+            <div class="documentos-card">
+                <h2>Documento 3</h2>
+                <iframe src="/assets/documents/documento3.pdf" class="pdf-preview" title="Vista previa de Documento 3"></iframe>
+                <a href="/assets/documents/documento3.pdf" class="btn-download" download>Descargar</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

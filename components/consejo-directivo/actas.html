@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actas - ASECEI</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+    <!-- Llamada al Header -->
+    <div id="header-container"></div>
+    <script>
+        // Carga dinámica del header
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header-container').innerHTML = data);
+    </script>
+
+    <!-- Sección Actas -->
+    <section class="actas-section">
+        <div class="actas-header">
+            <h1>ACTAS</h1>
+        </div>
+        <div class="actas-grid">
+            <!-- Card de archivo descargable -->
+            <div class="card">
+                <h2>Acta 1</h2>
+                <p>Descripción breve del acta 1</p>
+                <a href="/assets/documents/acta1.pdf" class="btn-download" download>Descargar</a>
+            </div>
+            <div class="card">
+                <h2>Acta 2</h2>
+                <p>Descripción breve del acta 2</p>
+                <a href="/assets/documents/acta2.pdf" class="btn-download" download>Descargar</a>
+            </div>
+            <div class="card">
+                <h2>Acta 3</h2>
+                <p>Descripción breve del acta 3</p>
+                <a href="/assets/documents/acta3.pdf" class="btn-download" download>Descargar</a>
+            </div>
+            <div class="card">
+                <h2>Acta 4</h2>
+                <p>Descripción breve del acta 4</p>
+                <a href="/assets/documents/acta4.pdf" class="btn-download" download>Descargar</a>
+            </div>
+            <div class="card">
+                <h2>Acta 5</h2>
+                <p>Descripción breve del acta 5</p>
+                <a href="/assets/documents/acta5.pdf" class="btn-download" download>Descargar</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos Nacionales - ASECEI</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+    <!-- Llamada al Header -->
+    <div id="header-container"></div>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header-container').innerHTML = data);
+    </script>
+
+    <!-- Sección de Eventos Nacionales -->
+    <section class="eventos-nacionales-section">
+        <h1 class="eventos-title">Eventos Nacionales</h1>
+
+        <!-- Noticia 1 -->
+        <div class="evento-card">
+            <img src="/assets/images/evento1.jpg" alt="Congreso de Ingeniería 2024" class="evento-image">
+            <div class="evento-content">
+                <h2>Congreso de Ingeniería 2024</h2>
+                <p>Únase a nosotros en este evento para explorar los avances en la enseñanza y práctica de la ingeniería en el Ecuador.</p>
+                <a href="#" class="btn-seguir-leyendo">Seguir Leyendo</a>
+            </div>
+        </div>
+
+        <!-- Noticia 2 -->
+        <div class="evento-card">
+            <img src="/assets/images/evento2.jpg" alt="Foro Nacional de Innovación" class="evento-image">
+            <div class="evento-content">
+                <h2>Foro Nacional de Innovación</h2>
+                <p>Un espacio para debatir y compartir proyectos innovadores en el ámbito de la ingeniería y tecnología.</p>
+                <a href="#" class="btn-seguir-leyendo">Seguir Leyendo</a>
+            </div>
+        </div>
+
+        <!-- Noticia 3 -->
+        <div class="evento-card">
+            <img src="/assets/images/evento3.jpg" alt="Taller de Docencia en Ingeniería" class="evento-image">
+            <div class="evento-content">
+                <h2>Taller de Docencia en Ingeniería</h2>
+                <p>Capacitación intensiva para mejorar la calidad de la enseñanza en las instituciones de ingeniería.</p>
+                <a href="#" class="btn-seguir-leyendo">Seguir Leyendo</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

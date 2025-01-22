@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos Internacionales</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <div id="header-container"></div>
+    <script>
+        fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header-container').innerHTML = data);
+    </script>
+
+    <!-- Eventos Internacionales Section -->
+    <section class="eventos-internacionales-section">
+        <!-- Título estilizado -->
+        <h1 class="eventos-title">Eventos Internacionales</h1>
+
+        <!-- Noticia 1 -->
+        <div class="evento-card">
+            <img src="/assets/images/internacional1.jpg" alt="Conferencia Global de Ingeniería" class="evento-image">
+            <div class="evento-content">
+                <h2>Conferencia Global de Ingeniería</h2>
+                <p>Participe en este evento donde se reúnen expertos internacionales para discutir los avances en ingeniería.</p>
+                <a href="#" class="btn-seguir-leyendo">Seguir Leyendo</a>
+            </div>
+        </div>
+
+        <!-- Noticia 2 -->
+        <div class="evento-card">
+            <img src="/assets/images/internacional2.jpg" alt="Simposio de Innovación Tecnológica" class="evento-image">
+            <div class="evento-content">
+                <h2>Simposio de Innovación Tecnológica</h2>
+                <p>Explore nuevas fronteras tecnológicas junto a ingenieros y científicos de todo el mundo.</p>
+                <a href="#" class="btn-seguir-leyendo">Seguir Leyendo</a>
+            </div>
+        </div>
+
+        <!-- Noticia 3 -->
+        <div class="evento-card">
+            <img src="/assets/images/internacional3.jpg" alt="Taller Internacional de Robótica" class="evento-image">
+            <div class="evento-content">
+                <h2>Taller Internacional de Robótica</h2>
+                <p>Aprenda de los principales líderes en robótica en un taller interactivo único.</p>
+                <a href="#" class="btn-seguir-leyendo">Seguir Leyendo</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
